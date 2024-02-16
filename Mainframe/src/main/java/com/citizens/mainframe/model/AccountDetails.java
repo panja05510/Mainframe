@@ -1,5 +1,8 @@
 package com.citizens.mainframe.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AccountDetails {
 	private String name;
 	private String ifsc;
@@ -34,19 +37,20 @@ public class AccountDetails {
 	public String toString() {
 		return "{"+"\"name\":" +"\""+ name +"\""+ ", \"ifsc\":" + "\""+ifsc +"\""+ ", \"balance\":" + balance + ", \"accountType\":"
 				+"\""+ accountType+"\""+"}" ;
-	}
-		public AccountDetails() {
-		super();
-		// TODO Auto-generated constructor stub
 		
 	}
-	public AccountDetails(String name, String ifsc, int balance, String accountType) {
-		super();
-		this.name = name;
-		this.ifsc = ifsc;
-		this.balance = balance;
-		this.accountType = accountType;
-	}
+//		public AccountDetails() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//		
+//	}
+//	public AccountDetails(String name, String ifsc, int balance, String accountType) {
+//		super();
+//		this.name = name;
+//		this.ifsc = ifsc;
+//		this.balance = balance;
+//		this.accountType = accountType;
+//	}
 	
 	
 
